@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Paavani Solutions — Drinking &amp; Treated Water Systems | Bangalore</title>
+<meta name="description" content="Paavani Solutions — 14 years of unwavering trust in Bangalore. Design, execution & service support for water softeners, RO/UV/UF purifiers & water treatment plants for homes, apartments, villas & institutions. Free on-site water testing." />
+<meta name="theme-color" content="#0f3f8f" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="apple-touch-icon" href="favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* ---- Paavani brand palette (derived from logo) ---- */
+  --abyss:#041f42;        /* deep brand navy */
+  --deep:#0a2d5c;
+  --blue-mid:#0d4a8f;     /* used in image/gradient backings */
+  --blue:#0f73c8;         /* azure */
+  --cyan:#1aa7e6;         /* droplet bright cyan = primary accent */
+  --cyan-soft:#9bd4f2;
+  --green:#9bc93f;        /* leaf lime = secondary accent */
+  --green-deep:#6fae2e;
+  --green-soft:#c4e57a;
+  --foam:#f2f8fd;
+  --ink:#072349;
+  --muted:#52729a;
+  --amber:#ffb454;
+  --coral:#ff7d6d;
+  --line:rgba(255,255,255,.14);
+  --line-d:rgba(7,35,73,.10);
+  --shadow:0 30px 60px -25px rgba(2,18,46,.6);
+  --grad-water:linear-gradient(135deg,#0f55b8,#1aa7e6);
+  --grad-leaf:linear-gradient(135deg,#6fae2e,#9bc93f);
+  --r:22px;
+  --maxw:1180px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"Hanken Grotesk",system-ui,sans-serif;background:var(--abyss);color:var(--foam);line-height:1.6;overflow-x:hidden;font-size:17px}
+h1,h2,h3,h4{font-family:"Fraunces",Georgia,serif;font-weight:600;line-height:1.07;letter-spacing:-.015em}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+.eyebrow{font-family:"Hanken Grotesk";font-weight:700;text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;color:var(--cyan);display:inline-flex;align-items:center;gap:.6em}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--green);opacity:.85}
+.btn{display:inline-flex;align-items:center;gap:.55em;font-weight:700;font-size:.97rem;letter-spacing:.01em;padding:.95em 1.6em;border-radius:100px;cursor:pointer;border:none;transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s,background .25s}
+.btn-primary{background:var(--grad-water);color:#fff;box-shadow:0 14px 30px -10px rgba(26,167,230,.7)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 20px 42px -12px rgba(26,167,230,.85)}
+.btn-leaf{background:var(--grad-leaf);color:#06330a;box-shadow:0 14px 30px -10px rgba(155,201,63,.55)}
+.btn-leaf:hover{transform:translateY(-3px)}
+.btn-ghost{background:rgba(255,255,255,.07);color:var(--foam);border:1px solid var(--line);backdrop-filter:blur(6px)}
+.btn-ghost:hover{background:rgba(255,255,255,.14);transform:translateY(-3px)}
+
+/* ===== NAV ===== */
+header.nav{position:fixed;top:0;left:0;right:0;z-index:100;transition:background .4s,backdrop-filter .4s,box-shadow .4s,padding .4s;padding:16px 0}
+header.nav.scrolled{background:rgba(4,31,66,.84);backdrop-filter:blur(16px);box-shadow:0 1px 0 var(--line);padding:9px 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:12px;font-family:"Fraunces";font-weight:700;font-size:1.34rem;letter-spacing:-.01em}
+.logo .mark-img{width:46px;height:46px;flex:none;filter:drop-shadow(0 4px 10px rgba(26,167,230,.35))}
+.logo small{display:block;font-family:"Hanken Grotesk";font-weight:600;font-size:.58rem;letter-spacing:.34em;text-transform:uppercase;color:var(--cyan-soft);opacity:.9;margin-top:2px}
+.nav-links{display:flex;align-items:center;gap:30px;font-weight:600;font-size:.93rem}
+.nav-links a{opacity:.82;transition:opacity .2s;position:relative}
+.nav-links a:hover{opacity:1}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--green);transition:width .25s}
+.nav-links a:hover::after{width:100%}
+.nav-cta{display:flex;align-items:center;gap:12px}
+.nav-phone{font-weight:700;font-size:.95rem;display:flex;align-items:center;gap:7px}
+.nav-phone svg{width:16px;height:16px;fill:var(--cyan)}
+.burger{display:none;background:none;border:none;cursor:pointer;width:30px;height:24px;position:relative}
+.burger span{position:absolute;left:0;height:2.5px;width:100%;background:var(--foam);border-radius:3px;transition:.3s}
+.burger span:nth-child(1){top:2px}.burger span:nth-child(2){top:11px}.burger span:nth-child(3){top:20px}
+
+/* ===== HERO ===== */
+.hero{min-height:100vh;display:flex;align-items:center;padding:140px 0 90px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:-3;background:
+   radial-gradient(120% 90% at 82% 8%,rgba(26,167,230,.30),transparent 55%),
+   radial-gradient(70% 70% at 12% 88%,rgba(155,201,63,.16),transparent 55%),
+   radial-gradient(90% 80% at 5% 20%,rgba(15,115,200,.22),transparent 50%),
+   linear-gradient(165deg,#04153a 0%,#0a2d5c 55%,#072449 100%)}
+.hero-bg::after{content:"";position:absolute;inset:0;opacity:.45;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
+.bubbles{position:absolute;inset:0;z-index:-2;overflow:hidden;pointer-events:none}
+.bubbles span{position:absolute;bottom:-60px;border-radius:50%;background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.5),rgba(155,212,242,.08) 60%,transparent);border:1px solid rgba(155,212,242,.18);animation:rise linear infinite}
+@keyframes rise{to{transform:translateY(-115vh) translateX(30px);opacity:0}}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:46px;align-items:center;width:100%}
+.hero-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid var(--line);padding:7px;border-radius:100px;font-size:.82rem;font-weight:600;margin-bottom:26px;backdrop-filter:blur(6px)}
+.hero-badge b{background:var(--grad-leaf);color:#06330a;padding:4px 11px;border-radius:100px;font-weight:800;font-family:"Fraunces";font-size:.82rem}
+.hero h1{font-size:clamp(2.5rem,5.6vw,4.7rem);font-weight:600}
+.hero h1 .ital{font-style:italic;color:var(--green-soft);font-weight:500}
+.hero p.lead{font-size:1.18rem;color:#d2ecf7;max-width:33ch;margin:24px 0 34px;font-weight:400}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.hero-stats{display:flex;gap:30px;margin-top:42px;flex-wrap:wrap}
+.hero-stats .s b{font-family:"Fraunces";font-size:2rem;font-weight:700;color:#fff;display:block;line-height:1}
+.hero-stats .s span{font-size:.82rem;color:var(--cyan-soft);font-weight:600;letter-spacing:.02em}
+.hero-stats .s{position:relative;padding-right:30px}
+.hero-stats .s:not(:last-child)::after{content:"";position:absolute;right:0;top:6px;bottom:6px;width:1px;background:var(--line)}
+
+/* hero logo card */
+.hero-visual{position:relative;display:flex;justify-content:center;align-items:center;min-height:440px}
+.logo-card{position:relative;background:rgba(255,255,255,.95);border-radius:30px;padding:50px 46px;box-shadow:0 50px 90px -30px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.4);animation:float 7s ease-in-out infinite;max-width:380px;width:84%}
+.logo-card::before{content:"";position:absolute;inset:-3px;border-radius:33px;background:conic-gradient(from 180deg,var(--cyan),var(--green),var(--blue),var(--cyan));filter:blur(22px);opacity:.4;z-index:-1}
+.logo-card img{width:100%}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+.drop{position:absolute;border-radius:50% 50% 50% 0;transform:rotate(45deg);background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.6),var(--cyan) 60%,var(--blue));box-shadow:0 12px 24px -6px rgba(26,167,230,.6);animation:float 5.5s ease-in-out infinite}
+.drop.leaf{background:radial-gradient(circle at 35% 30%,rgba(255,255,255,.5),var(--green) 60%,var(--green-deep))}
+.drop.d1{width:50px;height:50px;top:6px;right:8px;animation-delay:.5s}
+.drop.d2{width:32px;height:32px;bottom:30px;left:-4px;animation-delay:1.4s}
+.drop.d3{width:20px;height:20px;bottom:120px;right:-6px;animation-delay:.9s}
+.float-chip{position:absolute;background:rgba(4,31,66,.72);backdrop-filter:blur(10px);border:1px solid var(--line);border-radius:14px;padding:11px 15px;display:flex;gap:11px;align-items:center;box-shadow:var(--shadow);animation:float 6.5s ease-in-out infinite;z-index:3}
+.float-chip .ic{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;font-size:1rem}
+.float-chip .ic.blue{background:rgba(26,167,230,.2)}
+.float-chip .ic.grn{background:rgba(155,201,63,.22)}
+.float-chip b{font-size:.92rem;font-weight:700;display:block;line-height:1.1}
+.float-chip small{font-size:.72rem;color:var(--cyan-soft)}
+.float-chip.c1{top:24px;left:-26px;animation-delay:.2s}
+.float-chip.c2{bottom:18px;right:-20px;animation-delay:1.1s}
+
+.wave-divider{position:absolute;bottom:-1px;left:0;width:100%;line-height:0;z-index:1}
+.wave-divider svg{width:100%;height:90px;display:block}
+
+/* ===== MARQUEE ===== */
+.trustbar{background:#06204a;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0;overflow:hidden}
+.marquee{display:flex;gap:55px;white-space:nowrap;animation:scroll 32s linear infinite;width:max-content}
+.marquee span{display:inline-flex;align-items:center;gap:12px;font-weight:600;color:#c5e6f3;font-size:1rem;opacity:.92}
+.marquee span b{color:var(--green);font-family:"Fraunces"}
+@keyframes scroll{to{transform:translateX(-50%)}}
+
+/* ===== SECTIONS ===== */
+.sec{padding:108px 0;position:relative}
+.sec.light{background:var(--foam);color:var(--ink)}
+.sec.light h2,.sec.light h3{color:var(--ink)}
+.sec-head{max-width:680px;margin-bottom:54px}
+.sec-head h2{font-size:clamp(2rem,4vw,3.1rem);margin:18px 0 16px}
+.sec-head p{font-size:1.1rem;color:var(--muted)}
+.sec.light .sec-head p{color:#52729a}
+.light .eyebrow{color:var(--blue)}
+
+/* ===== PROBLEM / DATA ===== */
+.prob{background:linear-gradient(180deg,#041f42,#0a2b54)}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:52px}
+.metric{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:var(--r);padding:30px 24px;position:relative;overflow:hidden}
+.metric::before{content:"";position:absolute;top:-30px;right:-30px;width:90px;height:90px;border-radius:50%;background:radial-gradient(circle,rgba(255,125,109,.3),transparent 70%)}
+.metric .num{font-family:"Fraunces";font-size:3rem;font-weight:700;color:#fff;line-height:1}
+.metric .num .u{font-size:1.3rem;color:var(--coral)}
+.metric .lbl{font-weight:600;margin-top:8px;font-size:.98rem}
+.metric .sub{color:var(--cyan-soft);font-size:.82rem;margin-top:4px;opacity:.85}
+.compare{background:rgba(255,255,255,.03);border:1px solid var(--line);border-radius:26px;padding:38px;backdrop-filter:blur(4px)}
+.compare h3{font-size:1.5rem;margin-bottom:6px}
+.compare > p{color:var(--cyan-soft);font-size:.92rem;margin-bottom:28px}
+.bar-row{margin-bottom:26px}
+.bar-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:9px;flex-wrap:wrap;gap:6px}
+.bar-top .name{font-weight:700;font-size:1.02rem}
+.bar-top .vals{font-size:.85rem;color:var(--cyan-soft);font-weight:600}
+.bar-track{height:24px;background:rgba(255,255,255,.07);border-radius:100px;position:relative;overflow:hidden}
+.bar-safe{position:absolute;left:0;top:0;bottom:0;background:var(--grad-leaf);border-radius:100px;width:0;transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
+.bar-danger{position:absolute;top:0;bottom:0;background:repeating-linear-gradient(45deg,rgba(255,125,109,.85),rgba(255,125,109,.85) 8px,rgba(255,125,109,.6) 8px,rgba(255,125,109,.6) 16px);width:0;transition:width 1.4s cubic-bezier(.2,.8,.2,1) .15s}
+.safe-line{position:absolute;top:-5px;bottom:-5px;width:2px;background:#fff;z-index:3}
+.safe-line::after{content:"BIS safe";position:absolute;top:-22px;left:50%;transform:translateX(-50%);font-size:.62rem;font-weight:700;color:#fff;white-space:nowrap;letter-spacing:.04em}
+.legend{display:flex;gap:24px;margin-top:8px;flex-wrap:wrap;font-size:.84rem;font-weight:600}
+.legend i{width:14px;height:14px;border-radius:4px;display:inline-block;margin-right:7px;vertical-align:-2px}
+.legend .l-safe i{background:var(--green)}
+.legend .l-bad i{background:var(--coral)}
+
+/* ===== STANDARDS ===== */
+.std-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.std-card{background:#fff;border:1px solid var(--line-d);border-radius:18px;padding:24px;box-shadow:0 18px 40px -28px rgba(7,35,73,.4);transition:transform .3s,box-shadow .3s}
+.std-card:hover{transform:translateY(-5px);box-shadow:0 26px 50px -28px rgba(7,35,73,.5)}
+.std-card .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.std-card .param{font-family:"Fraunces";font-weight:700;font-size:1.15rem;color:var(--ink)}
+.std-card .pill{font-size:.68rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;padding:4px 10px;border-radius:100px;background:rgba(15,115,200,.12);color:var(--blue)}
+.std-card .row{display:flex;justify-content:space-between;padding:9px 0;border-top:1px dashed var(--line-d);font-size:.92rem}
+.std-card .row span:first-child{color:#52729a;font-weight:500}
+.std-card .row span:last-child{font-weight:700;color:var(--ink)}
+.std-card .row .ok{color:var(--green-deep)}
+.std-card .row .hi{color:#e0654f}
+
+/* ===== IMPACT ===== */
+.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.impact{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:var(--r);padding:30px;transition:transform .3s,background .3s}
+.impact:hover{transform:translateY(-6px);background:rgba(255,255,255,.07)}
+.impact .ic{width:54px;height:54px;border-radius:15px;background:linear-gradient(135deg,rgba(26,167,230,.25),rgba(155,201,63,.12));display:grid;place-items:center;font-size:1.6rem;margin-bottom:18px;border:1px solid var(--line)}
+.impact h3{font-size:1.28rem;margin-bottom:9px}
+.impact p{color:#c6e4ef;font-size:.96rem}
+
+/* ===== PRODUCTS ===== */
+.prod-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.prod{background:#fff;border-radius:var(--r);overflow:hidden;border:1px solid var(--line-d);box-shadow:0 18px 44px -30px rgba(7,35,73,.45);transition:transform .35s,box-shadow .35s}
+.prod:hover{transform:translateY(-8px);box-shadow:0 30px 60px -30px rgba(7,35,73,.55)}
+.prod .pic{height:160px;position:relative;overflow:hidden;background:linear-gradient(135deg,var(--blue-mid),var(--cyan));display:grid;place-items:center}
+.prod .pic img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.prod:hover .pic img{transform:scale(1.08)}
+.prod .pic .fallback{position:absolute;inset:0;display:grid;place-items:center;font-size:2.6rem;color:rgba(255,255,255,.9);z-index:-1}
+.prod .tag{position:absolute;top:12px;left:12px;background:rgba(4,31,66,.8);backdrop-filter:blur(6px);color:#fff;font-size:.68rem;font-weight:700;padding:5px 11px;border-radius:100px;letter-spacing:.03em;z-index:2}
+.prod .body{padding:20px 20px 24px}
+.prod h3{font-size:1.12rem;color:var(--ink);margin-bottom:7px;line-height:1.2}
+.prod p{font-size:.88rem;color:#52729a}
+
+/* ===== PROCESS ===== */
+.process{background:linear-gradient(180deg,#0a2b54,#041f42)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:step}
+.step{position:relative;padding:34px 28px;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:var(--r)}
+.step::before{counter-increment:step;content:"0" counter(step);font-family:"Fraunces";font-size:3.3rem;font-weight:700;background:var(--grad-water);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1;display:block;margin-bottom:14px}
+.step h3{font-size:1.4rem;margin-bottom:10px}
+.step p{color:#c6e4ef;font-size:.97rem}
+.step .arrow{position:absolute;right:-30px;top:54px;font-size:1.6rem;color:var(--green);z-index:3}
+
+/* ===== WHY ===== */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}
+.why-list{list-style:none;display:flex;flex-direction:column;gap:22px}
+.why-list li{display:flex;gap:16px;align-items:flex-start}
+.why-list .ck{flex:none;width:34px;height:34px;border-radius:50%;background:var(--grad-leaf);color:#06330a;display:grid;place-items:center;font-weight:900;box-shadow:0 8px 18px -6px rgba(155,201,63,.6)}
+.why-list h3{font-size:1.18rem;margin-bottom:4px;color:var(--ink)}
+.why-list p{color:#52729a;font-size:.96rem}
+.why-visual{position:relative;border-radius:26px;overflow:hidden;min-height:420px;background:linear-gradient(150deg,var(--blue-mid),var(--deep));box-shadow:var(--shadow);display:grid;place-items:center}
+.why-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.why-visual .ovl{position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,31,66,.2),rgba(4,31,66,.8))}
+.why-quote{position:relative;z-index:2;padding:34px;text-align:center;color:#fff}
+.why-quote b{font-family:"Fraunces";font-style:italic;font-size:1.9rem;line-height:1.25;display:block}
+.why-quote span{display:block;margin-top:14px;font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;color:var(--green-soft);font-weight:700}
+
+/* ===== AREAS ===== */
+.areas{background:var(--foam);color:var(--ink)}
+.area-chips{display:flex;flex-wrap:wrap;gap:11px;margin-top:10px}
+.area-chips span{background:#fff;border:1px solid var(--line-d);padding:9px 17px;border-radius:100px;font-weight:600;font-size:.9rem;color:var(--blue);transition:.25s}
+.area-chips span:hover{background:var(--grad-water);color:#fff;border-color:transparent;transform:translateY(-3px)}
+
+/* ===== CONTACT ===== */
+.contact{background:linear-gradient(165deg,#03143a,#0a2d5c)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:46px}
+.contact-info h2{font-size:clamp(2rem,4vw,3rem);margin:16px 0 18px}
+.contact-info .lead{color:#d2ecf7;font-size:1.1rem;max-width:42ch;margin-bottom:34px}
+.info-list{display:flex;flex-direction:column;gap:20px;margin-bottom:32px}
+.info-item{display:flex;gap:16px;align-items:flex-start}
+.info-item .ic{flex:none;width:46px;height:46px;border-radius:13px;background:rgba(26,167,230,.16);border:1px solid var(--line);display:grid;place-items:center}
+.info-item .ic svg{width:20px;height:20px;fill:var(--cyan)}
+.info-item b{display:block;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--cyan-soft);margin-bottom:3px;font-weight:700}
+.info-item a,.info-item p{font-size:1.05rem;color:#fff;font-weight:500}
+.form-card{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:26px;padding:36px;backdrop-filter:blur(8px);box-shadow:var(--shadow)}
+.form-card h3{font-size:1.5rem;margin-bottom:6px}
+.form-card .fp{color:var(--cyan-soft);font-size:.92rem;margin-bottom:24px}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:.8rem;font-weight:700;letter-spacing:.04em;margin-bottom:7px;color:#d2ecf7;text-transform:uppercase}
+.field input,.field select,.field textarea{width:100%;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:13px;padding:13px 15px;color:#fff;font-family:inherit;font-size:.98rem;transition:.25s}
+.field input::placeholder,.field textarea::placeholder{color:rgba(255,255,255,.4)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--cyan);background:rgba(26,167,230,.08)}
+.field select option{background:#0a2d5c;color:#fff}
+.form-card .btn-primary{width:100%;justify-content:center;margin-top:8px}
+.form-note{font-size:.78rem;color:var(--cyan-soft);text-align:center;margin-top:14px;opacity:.85}
+
+/* ===== FOOTER ===== */
+footer{background:#03102b;padding:64px 0 30px;border-top:1px solid var(--line)}
+.foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:44px;border-bottom:1px solid var(--line)}
+.foot-logo{background:#fff;border-radius:18px;padding:20px 24px;display:inline-block;max-width:220px;box-shadow:0 18px 40px -22px rgba(0,0,0,.6)}
+.foot-logo img{width:100%}
+.foot-brand p{color:#a6c8df;font-size:.95rem;margin-top:18px;max-width:36ch}
+.foot-col h4{font-family:"Hanken Grotesk";font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;color:var(--green-soft);margin-bottom:18px;font-weight:700}
+.foot-col a{display:block;color:#bcdde3;margin-bottom:11px;font-size:.95rem;transition:color .2s}
+.foot-col a:hover{color:var(--cyan)}
+.conserve{text-align:center;padding:34px 0 10px}
+.conserve b{font-family:"Fraunces";font-style:italic;font-size:clamp(1.4rem,3vw,2.1rem);color:var(--green-soft);letter-spacing:.02em}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;padding-top:24px;font-size:.82rem;color:#7ba3ab}
+.foot-bottom .sources{max-width:60ch;line-height:1.5}
+
+.wa-float{position:fixed;bottom:24px;right:24px;z-index:90;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 14px 30px -8px rgba(37,211,102,.6);animation:wapulse 2.4s ease-in-out infinite;transition:transform .25s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:32px;height:32px;fill:#fff}
+@keyframes wapulse{0%,100%{box-shadow:0 14px 30px -8px rgba(37,211,102,.55),0 0 0 0 rgba(37,211,102,.5)}50%{box-shadow:0 14px 30px -8px rgba(37,211,102,.55),0 0 0 16px rgba(37,211,102,0)}}
+
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:980px){
+  .hero-grid{grid-template-columns:1fr;gap:30px}
+  .hero-visual{min-height:340px;order:-1}
+  .logo-card{max-width:300px}
+  .metrics{grid-template-columns:repeat(2,1fr)}
+  .std-grid{grid-template-columns:repeat(2,1fr)}
+  .impact-grid{grid-template-columns:repeat(2,1fr)}
+  .prod-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:1fr;gap:18px}
+  .step .arrow{display:none}
+  .why-grid{grid-template-columns:1fr;gap:30px}
+  .contact-grid{grid-template-columns:1fr;gap:30px}
+  .foot-top{grid-template-columns:1fr 1fr;gap:30px}
+}
+@media(max-width:680px){
+  body{font-size:16px}
+  .nav-links,.nav-phone{display:none}
+  .nav-links.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:rgba(4,31,66,.97);backdrop-filter:blur(16px);padding:14px 26px 24px;border-top:1px solid var(--line)}
+  .nav-links.open a{padding:13px 0;border-bottom:1px solid var(--line);opacity:.95}
+  .burger{display:block}
+  .sec{padding:74px 0}
+  .hero{padding:118px 0 70px}
+  .hero-stats{gap:22px}
+  .hero-stats .s{padding-right:22px}
+  .float-chip.c1{left:-8px}.float-chip.c2{right:-6px}
+  .metrics{grid-template-columns:1fr 1fr;gap:12px}
+  .metric{padding:22px 18px}.metric .num{font-size:2.3rem}
+  .std-grid,.impact-grid,.prod-grid{grid-template-columns:1fr}
+  .compare{padding:24px 18px}
+  .foot-top{grid-template-columns:1fr}
+  .contact .form-card{padding:26px 20px}
+  .wrap{padding:0 18px}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="logo">
+      <img class="mark-img" src="paavani-mark.png" alt="Paavani Solutions logo">
+      <span>Paavani<small>Water Solutions</small></span>
+    </a>
+    <nav class="nav-links" id="navlinks">
+      <a href="#problem">Bangalore Water</a>
+      <a href="#standards">Standards</a>
+      <a href="#products">Solutions</a>
+      <a href="#process">How We Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="tel:+919482536926" class="nav-phone">
+        <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.3 1l-2.2 2.3z"/></svg>
+        9482 536 926
+      </a>
+      <a href="#contact" class="btn btn-primary">Free Water Test</a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="hero-bg"></div>
+  <div class="bubbles" id="bubbles"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="hero-badge"><b>14 yrs</b> Of unwavering support &amp; trust in Bangalore</div>
+        <h1>Clean, safe, <span class="ital">soft</span> water<br>for every tap you own.</h1>
+        <p class="lead">Design, execution &amp; service support for water softeners, RO/UV/UF purifiers and complete treatment plants — for homes, villas, apartments &amp; institutions.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Book a Free Water Test</a>
+          <a href="#products" class="btn btn-ghost">Explore Solutions →</a>
+        </div>
+        <div class="hero-stats">
+          <div class="s"><b>14+</b><span>Years of service</span></div>
+          <div class="s"><b>24–48h</b><span>Installation &amp; AMC support</span></div>
+          <div class="s"><b>Pan-BLR</b><span>City-wide coverage</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="float-chip c1"><span class="ic blue">💧</span><span><b>Soft Water</b><small>Zero limescale</small></span></div>
+        <div class="logo-card"><img src="paavani-logo.png" alt="Paavani Solutions"></div>
+        <div class="drop d1"></div><div class="drop leaf d2"></div><div class="drop d3"></div>
+        <div class="float-chip c2"><span class="ic grn">🌿</span><span><b>IS 10500</b><small>BIS-aligned quality</small></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path fill="#06204a" d="M0,40 C240,90 480,0 720,30 C960,60 1200,90 1440,45 L1440,90 L0,90 Z"></path></svg>
+  </div>
+</section>
+
+<!-- ===== MARQUEE ===== -->
+<div class="trustbar">
+  <div class="marquee">
+    <span><b>✦</b> New Unit Sales</span><span><b>✦</b> AMC &amp; Repairs</span><span><b>✦</b> Free On-site Water Testing</span><span><b>✦</b> Water Softeners</span><span><b>✦</b> RO / UV / UF Systems</span><span><b>✦</b> Treatment Plants</span><span><b>✦</b> Apartment &amp; Villa Solutions</span><span><b>✦</b> Institutional Dispensers</span>
+    <span><b>✦</b> New Unit Sales</span><span><b>✦</b> AMC &amp; Repairs</span><span><b>✦</b> Free On-site Water Testing</span><span><b>✦</b> Water Softeners</span><span><b>✦</b> RO / UV / UF Systems</span><span><b>✦</b> Treatment Plants</span><span><b>✦</b> Apartment &amp; Villa Solutions</span><span><b>✦</b> Institutional Dispensers</span>
+  </div>
+</div>
+
+<!-- ===== PROBLEM ===== -->
+<section class="sec prob" id="problem">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">The Bangalore Water Reality</span>
+      <h2>Your water may look clear. The numbers tell a different story.</h2>
+      <p>Most of Bengaluru runs on borewell and tanker water drawn from mineral-rich granite ground. The result is some of India's hardest, highest-TDS water — and you can't see it until it shows up on your skin, your geyser and your bills.</p>
+    </div>
+    <div class="metrics reveal">
+      <div class="metric"><div class="num" data-count="72">0<span class="u">%</span></div><div class="lbl">of Bengaluru receives contaminated water</div><div class="sub">varying by borewell, tanker or Cauvery source</div></div>
+      <div class="metric"><div class="num" data-count="500"><span class="u">&gt;</span>0</div><div class="lbl">mg/L TDS in many localities</div><div class="sub">vs. a BIS desirable limit of 500 mg/L</div></div>
+      <div class="metric"><div class="num" data-count="24">0<span class="u">%</span></div><div class="lbl">of homes exceed the hardness limit</div><div class="sub">hardness above the 200 mg/L safe line</div></div>
+      <div class="metric"><div class="num" data-count="14">0</div><div class="lbl">Karnataka districts with high fluoride</div><div class="sub">a known cause of dental &amp; skeletal fluorosis</div></div>
+    </div>
+    <div class="compare reveal">
+      <h3>How typical Bangalore borewell water compares to the safe limit</h3>
+      <p>Reported ranges for borewell-fed neighbourhoods such as Peenya, KR Puram, Whitefield, Marathahalli &amp; Banashankari, measured against the BIS IS&nbsp;10500:2012 acceptable limit.</p>
+      <div class="bar-row" data-safe="40" data-bad="100"><div class="bar-top"><span class="name">Total Hardness</span><span class="vals">Safe ≤ 200 mg/L · Borewell often 300–500+ mg/L</span></div><div class="bar-track"><div class="bar-danger"></div><div class="bar-safe"></div><div class="safe-line" style="left:40%"></div></div></div>
+      <div class="bar-row" data-safe="33" data-bad="100"><div class="bar-top"><span class="name">Total Dissolved Solids (TDS)</span><span class="vals">Desirable ≤ 500 mg/L · Often 1000+ mg/L</span></div><div class="bar-track"><div class="bar-danger"></div><div class="bar-safe"></div><div class="safe-line" style="left:33%"></div></div></div>
+      <div class="bar-row" data-safe="55" data-bad="92"><div class="bar-top"><span class="name">Fluoride</span><span class="vals">Acceptable ≤ 1.0 mg/L · Elevated across the region</span></div><div class="bar-track"><div class="bar-danger"></div><div class="bar-safe"></div><div class="safe-line" style="left:55%"></div></div></div>
+      <div class="legend"><span class="l-safe"><i></i>BIS acceptable level</span><span class="l-bad"><i></i>Typical Bangalore borewell reading</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STANDARDS ===== -->
+<section class="sec light" id="standards">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">The Benchmark · BIS IS 10500:2012</span>
+      <h2>What "safe water" actually means.</h2>
+      <p>India's drinking-water standard sets two lines for every parameter — the <b>acceptable limit</b> your water should meet, and a <b>permissible limit</b> only tolerable when no better source exists. We engineer every system to bring your water back to the acceptable line.</p>
+    </div>
+    <div class="std-grid">
+      <div class="std-card reveal"><div class="top"><span class="param">Total Hardness</span><span class="pill">CaCO₃</span></div><div class="row"><span>Acceptable</span><span class="ok">200 mg/L</span></div><div class="row"><span>Permissible</span><span>600 mg/L</span></div><div class="row"><span>Bangalore borewell</span><span class="hi">300–500+ mg/L</span></div></div>
+      <div class="std-card reveal"><div class="top"><span class="param">TDS</span><span class="pill">Dissolved solids</span></div><div class="row"><span>Desirable</span><span class="ok">500 mg/L</span></div><div class="row"><span>Permissible</span><span>2000 mg/L</span></div><div class="row"><span>Bangalore borewell</span><span class="hi">up to 1000+ mg/L</span></div></div>
+      <div class="std-card reveal"><div class="top"><span class="param">pH</span><span class="pill">Acidity</span></div><div class="row"><span>Acceptable</span><span class="ok">6.5 – 8.5</span></div><div class="row"><span>Relaxation</span><span>None</span></div><div class="row"><span>Effect if off</span><span class="hi">Corrosion / taste</span></div></div>
+      <div class="std-card reveal"><div class="top"><span class="param">Fluoride</span><span class="pill">F⁻</span></div><div class="row"><span>Acceptable</span><span class="ok">1.0 mg/L</span></div><div class="row"><span>Permissible</span><span>1.5 mg/L</span></div><div class="row"><span>Risk if high</span><span class="hi">Fluorosis</span></div></div>
+      <div class="std-card reveal"><div class="top"><span class="param">Calcium &amp; Magnesium</span><span class="pill">Ca / Mg</span></div><div class="row"><span>Calcium acceptable</span><span class="ok">75 mg/L</span></div><div class="row"><span>Magnesium acceptable</span><span class="ok">30 mg/L</span></div><div class="row"><span>Drives</span><span class="hi">Hardness &amp; scale</span></div></div>
+      <div class="std-card reveal"><div class="top"><span class="param">E. coli / Coliform</span><span class="pill">Bacteria</span></div><div class="row"><span>Acceptable</span><span class="ok">Absent / 100 mL</span></div><div class="row"><span>Relaxation</span><span>None</span></div><div class="row"><span>Risk if present</span><span class="hi">Waterborne illness</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== IMPACT ===== -->
+<section class="sec" id="impact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Why It Matters</span>
+      <h2>What untreated water quietly costs you.</h2>
+      <p>Hard, high-TDS or contaminated water rarely shows up as one dramatic event. It shows up slowly — on your body, in your appliances, and across your maintenance budget.</p>
+    </div>
+    <div class="impact-grid">
+      <div class="impact reveal"><div class="ic">🧴</div><h3>Skin, hair &amp; health</h3><p>Hardness above ~120 ppm is commonly linked to hair fall, dry skin, dandruff and irritation. High fluoride causes fluorosis; high nitrate endangers infants; bacteria cause waterborne disease.</p></div>
+      <div class="impact reveal"><div class="ic">⚙️</div><h3>Appliance damage</h3><p>Limescale clogs geysers, washing machines, dishwashers and solar heaters — cutting efficiency, raising power bills and forcing early, expensive replacements.</p></div>
+      <div class="impact reveal"><div class="ic">🚰</div><h3>Fixtures &amp; plumbing</h3><p>White chalky deposits coat taps, showerheads and tiles. Scale narrows pipes over time, reducing flow and pressure throughout the building.</p></div>
+      <div class="impact reveal"><div class="ic">🫧</div><h3>Soap &amp; detergent waste</h3><p>Hard water refuses to lather. You spend more on soap, shampoo and detergent — and still get residue on skin, hair and clothes.</p></div>
+      <div class="impact reveal"><div class="ic">💸</div><h3>Hidden running costs</h3><p>Scaling, corrosion, repeated repairs and shortened appliance life add up to far more than a one-time treatment system would have cost.</p></div>
+      <div class="impact reveal"><div class="ic">🏢</div><h3>Institutional risk</h3><p>For apartments, hospitals, schools and industry, non-compliant water means equipment downtime, dissatisfied residents and avoidable liability.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRODUCTS ===== -->
+<section class="sec light" id="products">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Our Solutions</span>
+      <h2>One partner for every water need — at home, on site, and at scale.</h2>
+      <p>From a single under-sink purifier to a full apartment-complex treatment plant, Paavani designs, installs and maintains the right system for your source water and your space.</p>
+    </div>
+    <div class="prod-grid">
+      <div class="prod reveal"><div class="pic"><span class="fallback">🏡</span><span class="tag">Residential</span><img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=70" alt="Water softening unit for villas" loading="lazy" onerror="this.style.display='none'"></div><div class="body"><h3>Water Softening — Villas &amp; Residences</h3><p>Whole-house softeners that strip hardness so every tap runs scale-free.</p></div></div>
+      <div class="prod reveal"><div class="pic"><span class="fallback">🏬</span><span class="tag">Apartments</span><img src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?auto=format&fit=crop&w=800&q=70" alt="Water softening for apartment complex" loading="lazy" onerror="this.style.display='none'"></div><div class="body"><h3>Softening for Apartment Complexes</h3><p>High-capacity centralised softening sized for gated communities &amp; towers.</p></div></div>
+      <div class="prod reveal"><div class="pic"><span class="fallback">⚗️</span><span class="tag">Purification</span><img src="https://images.unsplash.com/photo-1559825481-12c4c4d50b1f?auto=format&fit=crop&w=800&q=70" alt="RO UV UF purification unit" loading="lazy" onerror="this.style.display='none'"></div><div class="body"><h3>RO / UV / UF Purification Units</h3><p>Multi-stage purification that removes dissolved salts, metals &amp; microbes.</p></div></div>
+      <div class="prod reveal"><div class="pic"><span class="fallback">🏭</span><span class="tag">Industrial</span><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=70" alt="Water treatment plant" loading="lazy" onerror="this.style.display='none'"></div><div class="body"><h3>Water Treatment Plants</h3><p>Engineered plants for industry, institutions &amp; large-volume needs.</p></div></div>
+      <div class="prod reveal"><div class="pic"><span class="fallback">🏫</span><span class="tag">Institutions</span><img src="https://images.unsplash.com/photo-1543393716-375f47996a77?auto=format&fit=crop&w=800&q=70" alt="Water purifier cum dispenser for institutions" loading="lazy" onerror="this.style.display='none'"></div><div class="body"><h3>Purifier-cum-Dispenser Units</h3><p>Chilled, safe drinking water for schools, offices &amp; hospitals.</p></div></div>
+      <div class="prod reveal"><div class="pic"><span class="fallback">🏘️</span><span class="tag">Villa homes</span><img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=70" alt="RO purification system with water softener for villas" loading="lazy" onerror="this.style.display='none'"></div><div class="body"><h3>RO + Softener for Villa Homes</h3><p>A combined system — soft water everywhere, pure water at the kitchen.</p></div></div>
+      <div class="prod reveal"><div class="pic"><span class="fallback">🚿</span><span class="tag">Bathroom</span><img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=800&q=70" alt="Bathroom water softener" loading="lazy" onerror="this.style.display='none'"></div><div class="body"><h3>Bathroom Water Softeners</h3><p>Compact point-of-use softeners to protect skin, hair &amp; fittings.</p></div></div>
+      <div class="prod reveal"><div class="pic"><span class="fallback">🍽️</span><span class="tag">Under-sink</span><img src="https://images.unsplash.com/photo-1610824352934-c10d87b700cc?auto=format&fit=crop&w=800&q=70" alt="Domestic under the sink RO UV models" loading="lazy" onerror="this.style.display='none'"></div><div class="body"><h3>Domestic Under-the-Sink RO/UV</h3><p>Hidden, space-saving units delivering pure water straight to the tap.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section class="sec process" id="process">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">How We Work</span>
+      <h2>Design. Execution. Service support.</h2>
+      <p>The full lifecycle under one roof — so the system that's installed is the system that keeps performing, year after year.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3>Design</h3><p>It begins with a free on-site water test. We measure hardness, TDS, pH and key contaminants, then engineer a system sized precisely to your source water, usage and space.</p><span class="arrow">→</span></div>
+      <div class="step reveal"><h3>Execution</h3><p>Clean, professional installation of softeners, RO/UV/UF units or full plants — commissioned, calibrated and verified against the BIS acceptable limits before handover.</p><span class="arrow">→</span></div>
+      <div class="step reveal"><h3>Service Support</h3><p>Annual Maintenance Contracts, prompt repairs and genuine spares keep your system running for the long haul. New unit sales, AMC and repairs are all handled in-house.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY ===== -->
+<section class="sec light" id="why">
+  <div class="wrap">
+    <div class="why-grid">
+      <div class="reveal">
+        <span class="eyebrow">Why Paavani Solutions</span>
+        <h2 style="font-size:clamp(2rem,4vw,3rem);margin:18px 0 30px;color:var(--ink)">Trust built drop by drop, over 14 years.</h2>
+        <ul class="why-list">
+          <li><span class="ck">✓</span><div><h3>14 years of unwavering support</h3><p>A track record across Bangalore homes, villas, apartments and institutions.</p></div></li>
+          <li><span class="ck">✓</span><div><h3>Whole-lifecycle ownership</h3><p>Design, execution and service support from one accountable team — not three vendors pointing fingers.</p></div></li>
+          <li><span class="ck">✓</span><div><h3>Free on-site water testing</h3><p>Every recommendation starts from your actual water — never a generic guess.</p></div></li>
+          <li><span class="ck">✓</span><div><h3>BIS-aligned engineering</h3><p>Systems designed to bring water to the IS 10500:2012 acceptable line, verified at handover.</p></div></li>
+          <li><span class="ck">✓</span><div><h3>AMC, repairs &amp; genuine spares</h3><p>Responsive service that protects your investment for years, not just months.</p></div></li>
+        </ul>
+      </div>
+      <div class="why-visual reveal">
+        <img src="https://images.unsplash.com/photo-1538300342682-cf57afb97285?auto=format&fit=crop&w=900&q=70" alt="Clean water" loading="lazy" onerror="this.style.display='none'">
+        <div class="ovl"></div>
+        <div class="why-quote"><b>"Water is precious.<br>Save water,<br>conserve water."</b><span>Our promise to Bangalore</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AREAS ===== -->
+<section class="sec areas" id="areas">
+  <div class="wrap">
+    <div class="sec-head reveal" style="margin-bottom:30px">
+      <span class="eyebrow">Service Coverage</span>
+      <h2>Serving water across Bangalore.</h2>
+      <p>Headquartered in Peenya, with installation &amp; AMC support reaching neighbourhoods city-wide.</p>
+    </div>
+    <div class="area-chips reveal">
+      <span>Peenya</span><span>Yeshwanthpur</span><span>Whitefield</span><span>Marathahalli</span><span>KR Puram</span><span>Electronic City</span><span>HSR Layout</span><span>Banashankari</span><span>Jayanagar</span><span>JP Nagar</span><span>Yelahanka</span><span>Hebbal</span><span>Sarjapur</span><span>Koramangala</span><span>Rajajinagar</span><span>Malleswaram</span><span>Indiranagar</span><span>Bannerghatta Road</span><span>+ more on request</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="sec contact" id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <span class="eyebrow">Get In Touch</span>
+        <h2>Start with a free water test.</h2>
+        <p class="lead">Tell us where you are and what water reaches you. We'll test it on-site and recommend exactly the right system — no obligation.</p>
+        <div class="info-list">
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.5.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.5.1.4 0 .8-.3 1l-2.2 2.3z"/></svg></span><div><b>Call / WhatsApp</b><a href="tel:+919482536926">+91 94825 36926</a></div></div>
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 5h18c.6 0 1 .4 1 1v12c0 .6-.4 1-1 1H3c-.6 0-1-.4-1-1V6c0-.6.4-1 1-1zm9 7L4 7v1l8 5 8-5V7l-8 5z"/></svg></span><div><b>Email</b><a href="mailto:sales.paavanisolutions@gmail.com">sales.paavanisolutions@gmail.com</a></div></div>
+          <div class="info-item"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></span><div><b>Visit us</b><p>Ground Floor, PIA Bhawan, 1st Cross, 1st Stage, Peenya, Bangalore 560058</p></div></div>
+        </div>
+      </div>
+      <div class="form-card reveal">
+        <h3>Request your free water test</h3>
+        <p class="fp">We'll get back to you within one working day.</p>
+        <div class="field"><label for="f-name">Name</label><input id="f-name" type="text" placeholder="Your full name"></div>
+        <div class="field"><label for="f-phone">Phone</label><input id="f-phone" type="tel" placeholder="10-digit mobile number"></div>
+        <div class="field"><label for="f-area">Area / Locality</label><input id="f-area" type="text" placeholder="e.g. Whitefield, Peenya, HSR Layout"></div>
+        <div class="field"><label for="f-need">What do you need?</label>
+          <select id="f-need"><option>Whole-house water softener</option><option>Apartment / complex treatment</option><option>RO / UV / UF purifier</option><option>Water treatment plant</option><option>Bathroom / under-sink unit</option><option>AMC / repair of existing system</option><option>Not sure — please advise</option></select>
+        </div>
+        <button class="btn btn-primary" id="sendBtn">Send via WhatsApp →</button>
+        <p class="form-note">Opens WhatsApp with your details pre-filled. We never ask for payment or ID details online.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <div class="foot-logo"><img src="paavani-logo.png" alt="Paavani Solutions"></div>
+        <p>Drinking &amp; treated water systems — design, execution &amp; service support. Sales of new units, AMC, service &amp; repairs of water purification systems undertaken.</p>
+      </div>
+      <div class="foot-col"><h4>Solutions</h4><a href="#products">Water Softeners</a><a href="#products">RO / UV / UF Systems</a><a href="#products">Treatment Plants</a><a href="#products">Dispenser Units</a><a href="#products">AMC &amp; Repairs</a></div>
+      <div class="foot-col"><h4>Company</h4><a href="#problem">Bangalore Water</a><a href="#standards">Water Standards</a><a href="#process">How We Work</a><a href="#areas">Service Areas</a><a href="#contact">Contact</a></div>
+    </div>
+    <div class="conserve"><b>Water is precious — save water, conserve water.</b></div>
+    <div class="foot-bottom">
+      <span>© <span id="yr"></span> Paavani Solutions, Peenya, Bangalore 560058. All rights reserved.</span>
+      <span class="sources">Water-quality figures referenced from public reporting (Citizen Matters, Deccan Chronicle/BRITA study, CGWB) &amp; BIS IS 10500:2012. Local readings vary by source — always test your own water.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/919482536926?text=Hi%20Paavani%20Solutions%2C%20I%27d%20like%20a%20free%20water%20test." target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7.02zM12.05 20.15h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.03-.2-.31a8.18 8.18 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+</a>
+
+<script>
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>{nav.classList.toggle('scrolled',scrollY>30)});
+const burger=document.getElementById('burger'),links=document.getElementById('navlinks');
+burger.addEventListener('click',()=>links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+document.getElementById('yr').textContent=new Date().getFullYear();
+const bw=document.getElementById('bubbles');
+for(let i=0;i<16;i++){const b=document.createElement('span');const s=8+Math.random()*46;b.style.cssText=`width:${s}px;height:${s}px;left:${Math.random()*100}%;animation-duration:${9+Math.random()*12}s;animation-delay:${-Math.random()*14}s`;bw.appendChild(b);}
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.14});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const cio=new IntersectionObserver((es)=>{es.forEach(e=>{
+  if(!e.isIntersecting)return;
+  if(e.target.dataset.count){const t=+e.target.dataset.count,el=e.target,prefix=el.querySelector('.u')?el.querySelector('.u').outerHTML:'';const hasPre=el.innerHTML.trim().startsWith('<span');let n=0,step=Math.max(1,Math.round(t/45));const tick=()=>{n+=step;if(n>=t)n=t;el.innerHTML=hasPre?prefix+n:n+prefix;if(n<t)requestAnimationFrame(tick);};tick();}
+  if(e.target.classList.contains('bar-row')){e.target.querySelector('.bar-danger').style.width=e.target.dataset.bad+'%';e.target.querySelector('.bar-safe').style.width=e.target.dataset.safe+'%';}
+  cio.unobserve(e.target);
+})},{threshold:.5});
+document.querySelectorAll('[data-count],.bar-row').forEach(el=>cio.observe(el));
+document.getElementById('sendBtn').addEventListener('click',()=>{const v=id=>document.getElementById(id).value.trim();const msg=`Hi Paavani Solutions, I'd like a free water test.%0A%0AName: ${v('f-name')||'-'}%0APhone: ${v('f-phone')||'-'}%0AArea: ${v('f-area')||'-'}%0ANeed: ${v('f-need')}`;window.open(`https://wa.me/919482536926?text=${msg}`,'_blank');});
+</script>
+</body>
+</html>
